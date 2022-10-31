@@ -1,0 +1,5 @@
+commonLabels:
+  app: registry
+resources:
+- deployment.yaml
+- service.yaml

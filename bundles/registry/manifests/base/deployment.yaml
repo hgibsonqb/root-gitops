@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: registry
+spec:
+  template:
+    spec:
+      containers:
+        - image: registry:2
+          imagePullPolicy: IfNotPresent
+          name: registry
+          ports:
+          - containerPort: 5000
+            name: registry

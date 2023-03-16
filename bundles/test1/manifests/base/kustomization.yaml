@@ -1,0 +1,11 @@
+commonLabels:
+  app: test1
+configMapGenerator:
+- name: test1
+generatorOptions:
+  disableNameSuffixHash: true
+images:
+- name: test
+  newTag: "1" # Magic comment here
+resources:
+- deployment.yaml

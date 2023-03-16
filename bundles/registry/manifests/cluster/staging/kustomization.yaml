@@ -1,6 +1,6 @@
 patchesStrategicMerge:
-- deployment.patch.yaml
+- persistentvolumeclaim.patch.yaml
+- service.patch.yaml
 resources:
 - ../../base
 - persistentvolume.yaml
-- persistentvolumeclaim.yaml

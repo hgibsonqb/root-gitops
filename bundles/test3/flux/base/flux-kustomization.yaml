@@ -7,7 +7,7 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: root-gitops
+    name: root-gitops-test3
   timeout: 2m
   validation: client
   wait: true

@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: root-gitops
+  name: root-gitops-test3
 spec:
   ref:
     tag: 2013-03-16-10-45

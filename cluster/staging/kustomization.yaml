@@ -1,2 +1,3 @@
 resources:
   - ../../bundles/registry/flux/cluster/staging
+  - ../../bundles/test3/flux/cluster/staging

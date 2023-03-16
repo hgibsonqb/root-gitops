@@ -1,6 +1,5 @@
 namespace: production
 patchesStrategicMerge:
 - flux-kustomization.patch.yaml
-- gitrepository.patch.yaml
 resources:
 - ../../base

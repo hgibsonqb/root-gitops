@@ -4,4 +4,6 @@ metadata:
   name: registry
 spec:
   path: ./bundles/registry/manifests/cluster/devlab
+  sourceRef:
+    namespace: devlab
   targetNamespace: devlab

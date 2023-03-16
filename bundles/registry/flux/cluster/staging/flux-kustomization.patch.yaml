@@ -4,4 +4,6 @@ metadata:
   name: registry
 spec:
   path: ./bundles/registry/manifests/cluster/staging
+  sourceRef:
+    namespace: staging
   targetNamespace: staging

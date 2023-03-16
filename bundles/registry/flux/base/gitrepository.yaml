@@ -1,11 +1,9 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: root-gitops-registry
+  name: root-gitops
 spec:
   gitImplementation: libgit2
   interval: 2m
   timeout: 2m
   url: ssh://git@github.com/hgibsonqb/root-gitops.git
-  ref:
-    branch: main

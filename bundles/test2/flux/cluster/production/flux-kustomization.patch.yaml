@@ -3,7 +3,7 @@ kind: Kustomization
 metadata:
   name: test2
 spec:
-  path: ./bundles/test2/manifests/cluster/production
+  path: ./bundles/test2/manifests/cluster/revision/production
   sourceRef:
     namespace: production
   targetNamespace: production

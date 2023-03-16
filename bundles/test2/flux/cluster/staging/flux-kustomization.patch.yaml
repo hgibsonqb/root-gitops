@@ -3,7 +3,7 @@ kind: Kustomization
 metadata:
   name: test2
 spec:
-  path: ./bundles/test2/manifests/cluster/staging
+  path: ./bundles/test2/manifests/cluster/revision/staging
   sourceRef:
     namespace: staging
   targetNamespace: staging

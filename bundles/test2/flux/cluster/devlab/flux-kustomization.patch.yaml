@@ -3,7 +3,7 @@ kind: Kustomization
 metadata:
   name: test2
 spec:
-  path: ./bundles/test2/manifests/cluster/devlab
+  path: ./bundles/test2/manifests/cluster/revision/devlab
   sourceRef:
     namespace: devlab
   targetNamespace: devlab

@@ -1,0 +1,8 @@
+commonLabels:
+  app: test2
+configMapGenerator:
+- name: test2
+generatorOptions:
+  disableNameSuffixHash: true
+resources:
+- deployment.yaml

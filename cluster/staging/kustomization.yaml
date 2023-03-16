@@ -1,4 +1,5 @@
 resources:
   - ../../bundles/registry/flux/cluster/staging
+  - ../../bundles/test1/flux/cluster/staging
   - ../../bundles/test2/flux/cluster/staging
   - ../../bundles/test3/flux/cluster/staging

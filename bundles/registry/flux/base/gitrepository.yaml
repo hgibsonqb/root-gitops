@@ -5,5 +5,7 @@ metadata:
 spec:
   gitImplementation: libgit2
   interval: 2m
+  secretRef:
+    name: flux-system # Added manually
   timeout: 2m
   url: ssh://git@github.com/hgibsonqb/root-gitops.git

@@ -1,2 +1,3 @@
 resources:
 - flux-kustomization.yaml
+- gitrepository.yaml

@@ -1,0 +1,6 @@
+namespace: staging
+patchesStrategicMerge:
+- flux-kustomization.patch.yaml
+resources:
+- ../../base
+- namespace.yaml

@@ -4,4 +4,4 @@ metadata:
   name: root-gitops-test3
 spec:
   ref:
-    tag: 2013-03-16-10-45
+    tag: 2013-03-16-10-52

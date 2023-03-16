@@ -1,0 +1,5 @@
+images:
+- name: localhost:30007/test
+  newTag: "1" # Magic comment here
+resources:
+- https://github.com/hgibsonqb/root-gitops//bundles/test2/manifests/cluster/config/devlab?ref=2023-03-16-11-15

@@ -1,0 +1,5 @@
+images:
+- name: localhost:30009/test
+  newTag: "1" # Magic comment here
+resources:
+- https://github.com/hgibsonqb/test//k8s/cluster/production?ref=1 # Magic comment here

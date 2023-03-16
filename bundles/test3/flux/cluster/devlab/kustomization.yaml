@@ -1,0 +1,5 @@
+namespace: devlab
+patchesStrategicMerge:
+- flux-kustomization.patch.yaml
+resources:
+- ../../base

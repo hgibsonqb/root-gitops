@@ -5,6 +5,8 @@ metadata:
 spec:
   gitImplementation: libgit2
   interval: 2m
+  ref:
+    branch: main
   secretRef:
     name: flux-system # Added manually
   timeout: 2m

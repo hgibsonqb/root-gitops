@@ -13,7 +13,7 @@ Here are three different bundle formats for the application [test](https://githu
 - Application image version and bundle base are separate
 - Image deploy process
  1. Merge PR to test, build new image
- 2. Merge PR to root-gitops/bundle/test2/manifests/cluster/<target nev> to deploy to that env
+ 2. Merge PR to root-gitops/bundle/test2/manifests/cluster/revision/<target nev> to deploy to that env
 - Bundle deploy process
  1. Merge PR to root-gitops/bundle/test2/manifests/base, root-gitops/bundle/test2/manifests/cluster/config/* this will roll out new image to all envs where root-gitops/bundle/test2/manifests/cluster/revision does not have a pinned config
  2. Merge PR to root-gitops/bundle/test1/manifests/cluster/revision/<production or env where revision is pinned> to bump config version

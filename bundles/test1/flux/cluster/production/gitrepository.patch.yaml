@@ -4,4 +4,4 @@ metadata:
   name: root-gitops-test1
 spec:
   ref:
-    tag: 2013-03-16-10-52
+    tag: 2023-03-16-11-42 # Magic comment here? This is what we'd chagne to promote an image to prod

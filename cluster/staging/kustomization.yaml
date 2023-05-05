@@ -4,3 +4,4 @@ resources:
   - ../../bundles/test2/flux/cluster/staging
   - ../../bundles/test3/flux/cluster/staging
   - ../../bundles/test4/flux/cluster/staging
+  - ../../bundles/test5/flux/cluster/staging

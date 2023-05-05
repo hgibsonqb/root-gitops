@@ -4,3 +4,4 @@ resources:
   - ../../bundles/test2/flux/cluster/devlab
   - ../../bundles/test3/flux/cluster/devlab
   - ../../bundles/test4/flux/cluster/devlab
+  - ../../bundles/test5/flux/cluster/devlab

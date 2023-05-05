@@ -4,3 +4,4 @@ resources:
   - ../../bundles/test2/flux/cluster/production
   - ../../bundles/test3/flux/cluster/production
   - ../../bundles/test4/flux/cluster/production
+  - ../../bundles/test5/flux/cluster/production

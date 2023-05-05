@@ -10,4 +10,4 @@ images:
    newName: localhost:30009/test
    newTag: "1" # Magic comment here
 resources:
-- https://github.com/hgibsonqb/root-gitops//bundles/test4/manifests/cluster/production?ref=main
+- https://github.com/hgibsonqb/root-gitops//bundles/test4/manifests/cluster/production?ref=2023-05-05-09-05

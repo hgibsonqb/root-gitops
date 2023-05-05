@@ -1,0 +1,13 @@
+commonLabels:
+  env: devlab
+configMapGenerator:
+  - name: test5
+    behavior: merge
+    literals:
+      - ENV=devlab
+images:
+- name: test
+  newName: localhost:30007/test
+  newTag: ${tag}
+resources:
+- ../../base

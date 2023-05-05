@@ -1,0 +1,13 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: root-gitops-test5
+spec:
+  gitImplementation: libgit2
+  interval: 2m
+  ref:
+    branch: main
+  secretRef:
+    name: flux-system # Added manually
+  timeout: 2m
+  url: ssh://git@github.com/hgibsonqb/root-gitops.git

@@ -1,0 +1,7 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: root-gitops-test5
+spec:
+  ref:
+    tag: 2023-03-16-11-42 # Update base version here

@@ -16,10 +16,20 @@ Here are three different bundle formats for the application [test](https://githu
  2. Merge PR to root-gitops/bundle/test2/manifests/cluster/revision/<target nev> to deploy to that env
 - Bundle deploy process
  1. Merge PR to root-gitops/bundle/test2/manifests/base, root-gitops/bundle/test2/manifests/cluster/config/* this will roll out new image to all envs where root-gitops/bundle/test2/manifests/cluster/revision does not have a pinned config
- 2. Merge PR to root-gitops/bundle/test1/manifests/cluster/revision/<production or env where revision is pinned> to bump config version
+ 2. Merge PR to root-gitops/bundle/test2/manifests/cluster/revision/<production or env where revision is pinned> to bump config version
 
 ## Test3
 - Bundle base lives in [test repo](https://github.com/hgibsonqb/test/tree/main/k8s)
 - Image/Bundle deploy process
  1. Merge PR to test, build new image
- 2. Merge PR to root-gitops/bundle/test2/manifests/cluster/<target nev> to deploy to that env
+ 2. Merge PR to root-gitops/bundle/test3/manifests/cluster/<target env> to deploy to that env
+- We'll need to set up sops in the application repo as well
+
+## Test4
+- Application image version and bundle base are separate
+- Image deploy process
+ 1. Merge PR to test, build new image
+ 2. Merge PR to root-gitops/bundle/test4/manifests/cluster/<target nev> to deploy to that env
+- Bundle deploy process
+ 1. Merge PR to root-gitops/bundle/test4/manifests/base, root-gitops/bundle/test4/manifests/cluster/* this will roll out new image to all envs where root-gitops/bundle/test4/manifests/cluster/ does not have a pinned config. Only update clusters where config is not pinned/bundle should be updated.
+ 2. Merge PR to root-gitops/bundle/test4/manifests/cluster/<production or env where revision is pinned> to bump base version and update config

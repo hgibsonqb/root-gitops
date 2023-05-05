@@ -1,0 +1,5 @@
+namespace: production
+patchesStrategicMerge:
+- flux-kustomization.patch.yaml
+resources:
+- ../../base

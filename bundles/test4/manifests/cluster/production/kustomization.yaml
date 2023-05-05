@@ -1,0 +1,13 @@
+commonLabels:
+  env: production
+configMapGenerator:
+  - name: test4
+    behavior: merge
+    literals:
+      - ENV=production
+images:
+ - name: test
+   newName: localhost:30009/test
+   newTag: "1" # Magic comment here
+resources:
+- https://github.com/hgibsonqb/root-gitops//bundles/test4/manifests/cluster/production?ref=main

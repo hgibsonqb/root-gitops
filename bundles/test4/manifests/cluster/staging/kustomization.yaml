@@ -1,0 +1,13 @@
+commonLabels:
+  env: staging
+configMapGenerator:
+  - name: test4
+    behavior: merge
+    literals:
+      - ENV=staging
+images:
+- name: test
+  newName: localhost:30008/test
+  newTag: "1" # Magic comment here
+resources:
+- ../../base

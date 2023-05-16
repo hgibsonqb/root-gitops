@@ -1,7 +1,10 @@
 namespace: production
-patchesStrategicMerge:
-- flux-kustomization.patch.yaml
-- gitrepository.patch.yaml
 resources:
 - ../../base
 - namespace.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+patches:
+- path: flux-kustomization.patch.yaml
+- path: gitrepository.patch.yaml
+- path: imageupdateautomation.patch.yaml

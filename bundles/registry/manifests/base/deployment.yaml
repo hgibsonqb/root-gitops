@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - image: registry:2
+        - image: registry:${REGISTRY_IMAGE_TAG}
           imagePullPolicy: IfNotPresent
           name: registry
           ports:

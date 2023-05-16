@@ -4,6 +4,9 @@ metadata:
   name: registry
 spec:
   path: ./bundles/registry/manifests/cluster/staging
+  postBuild:
+    substitue:
+      REGISTRY_IMAGE_TAG: "2" # {"$imagepolicy": "staging:registry:tag"}
   sourceRef:
     namespace: staging
   targetNamespace: staging

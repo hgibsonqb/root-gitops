@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: registry
+spec:
+  git:
+    push:
+      branch: update-registry-nginx-staging
+  update:
+    path: bundles/registry/flux/cluster/staging

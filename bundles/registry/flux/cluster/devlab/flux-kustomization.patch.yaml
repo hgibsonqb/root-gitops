@@ -4,6 +4,9 @@ metadata:
   name: registry
 spec:
   path: ./bundles/registry/manifests/cluster/devlab
+  postBuild:
+    substitue:
+      REGISTRY_IMAGE_TAG: "2" # {"$imagepolicy": "devlab:registry:tag"}
   sourceRef:
     namespace: devlab
   targetNamespace: devlab

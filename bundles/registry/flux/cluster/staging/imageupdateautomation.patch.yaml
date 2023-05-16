@@ -5,6 +5,6 @@ metadata:
 spec:
   git:
     push:
-      branch: update-registry-nginx-staging
+      branch: update-registry-staging
   update:
     path: bundles/registry/flux/cluster/staging

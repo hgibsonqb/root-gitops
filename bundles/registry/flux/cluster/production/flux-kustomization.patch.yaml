@@ -5,7 +5,7 @@ metadata:
 spec:
   path: ./bundles/registry/manifests/cluster/production
   postBuild:
-    substitue:
+    substitute:
       REGISTRY_IMAGE_TAG: "2" # {"$imagepolicy": "production:registry:tag"}
   sourceRef:
     namespace: production

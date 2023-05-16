@@ -6,7 +6,8 @@ spec:
   path: ./bundles/test5/manifests/cluster/devlab
   postBuild:
     substitute:
-      tag: "1" # Magic comment here
+      NGINX_IMAGE_TAG: 1.22 # {"$imagepolicy": "devlab:nginx"}
+      TEST_IMAGE_TAG: "1" # Magic comment here
   sourceRef:
     namespace: devlab
   targetNamespace: devlab

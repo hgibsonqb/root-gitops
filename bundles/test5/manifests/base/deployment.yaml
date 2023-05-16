@@ -14,3 +14,8 @@ spec:
           ports:
           - containerPort: 5000
             name: test
+        - name: nginx
+          image: nginx
+          ports:
+          - containerPort: 80
+            protocol: TCP

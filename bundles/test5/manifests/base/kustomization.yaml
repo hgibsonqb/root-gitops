@@ -2,6 +2,9 @@ commonLabels:
   app: test5
 configMapGenerator:
 - name: test5
+images:
+- name: nginx
+  newTag: ${NGINX_IMAGE_TAG}
 generatorOptions:
   disableNameSuffixHash: true
 resources:

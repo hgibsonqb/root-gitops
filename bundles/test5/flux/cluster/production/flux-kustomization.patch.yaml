@@ -6,7 +6,8 @@ spec:
   path: ./bundles/test5/manifests/cluster/production
   postBuild:
     substitute:
-      tag: "1" # Magic comment here
+      NGINX_IMAGE_TAG: 1.22 # {"$imagepolicy": "production:nginx"}
+      TEST_IMAGE_TAG: "1" # Magic comment here
   sourceRef:
     namespace: production
   targetNamespace: production

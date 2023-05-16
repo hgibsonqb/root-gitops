@@ -1,3 +1,6 @@
 resources:
 - flux-kustomization.yaml
 - gitrepository.yaml
+- imagepolicy.yaml
+- imagerepository.yaml
+- imageupdateautomation.yaml

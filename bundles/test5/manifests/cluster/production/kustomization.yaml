@@ -8,6 +8,6 @@ configMapGenerator:
 images:
 - name: test
   newName: localhost:30009/test
-  newTag: ${tag}
+  newTag: ${TEST_IMAGE_TAG}
 resources:
 - ../../base

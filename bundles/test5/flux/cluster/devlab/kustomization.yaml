@@ -1,5 +1,8 @@
 namespace: devlab
-patchesStrategicMerge:
-- flux-kustomization.patch.yaml
 resources:
 - ../../base
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+patches:
+- path: flux-kustomization.patch.yaml
+- path: imageupdateautomation.patch.yaml

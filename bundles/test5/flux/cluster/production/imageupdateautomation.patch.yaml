@@ -5,6 +5,6 @@ metadata:
 spec:
   git:
     push:
-      branch: update-nginx-production
+      branch: update-test5-nginx-production
   update:
     path: bundles/test5/flux/cluster/production

@@ -4,4 +4,5 @@ metadata:
   name: root-gitops
 spec:
   ref:
-    tag: 2023-03-16-9-54
+    $patch: replace
+    commit: "87d90e2ab329bd3e1920ddae4b236dea0b8d6b8d"

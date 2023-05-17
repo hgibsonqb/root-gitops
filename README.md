@@ -51,12 +51,12 @@ We keep configuration for all our environments in the same repository on the sam
 We could mitigate this by moving the production config to it's own repo like in topaz.
 
 ### Scenario 1
-The root flux controller is not suspended. Attacker creates new imagerepository hosting malicious image, new image policy, new iua in which points to the production flux clusteroverlay (where the image version is set) and the main branch in devlab. 
+The root flux kustomization is not suspended. Attacker creates new imagerepository hosting malicious image, new image policy, new iua in which points to the production flux clusteroverlay (where the image version is set) and the main branch in devlab. 
 
 Nothing happens because there the magic comment in the production cluster overlay indicates which image policy updates should come from, and it is not the new policy.
 
 ### Scenario 2
-The root flux controller is not suspended. Attacker creates new imagerepository hosting malicious image, updates the existing image policy (which is named the same in devlab as in production), new iua which points to the production flux clusteroverlay (where the image version is set) and the main branch in devlab. 
+The root flux kustomization is not suspended. Attacker creates new imagerepository hosting malicious image, updates the existing image policy (which is named the same in devlab as in production), new iua which points to the production flux clusteroverlay (where the image version is set) and the main branch in devlab. 
 
 The policy updated to pull in the new image. In this case nothing happened because the environments are separated by namespace instead of by cluster, and the magic comment references the namespace as well as the policy name, however in a multi-cluster setup the namespaces are the same. Eventually the flux controller overwrote the edited registry but we can't rely on that.
 
@@ -70,3 +70,7 @@ I was able to mitigate this by configuring the main branch protection rule with 
 ``` 
 This exploit relies on the attacker having admin/edit permissions in a non-prod cluster. They read access to the root-gitops repo would be useful although they could potentially infer configuration (target path, policy name, etc) from the non-prod configuration. 
 
+### Scenario 3
+Attacker suspends root flux kustomization in devlab, then updates the imagerepoitory to reference a malicious image and the image update automation to refrence the production cluser overlay, and push to main.
+
+This also overwrite the production image tag on the main branch, and the flux root kustomization didn't revert it.

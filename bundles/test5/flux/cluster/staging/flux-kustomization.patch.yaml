@@ -6,7 +6,7 @@ spec:
   path: ./bundles/test5/manifests/cluster/staging
   postBuild:
     substitute:
-      NGINX_IMAGE_TAG: "1.25.0" # {"$imagepolicy": "staging:nginx:tag"}
+      NGINX_IMAGE_TAG: "1.25.1" # {"$imagepolicy": "staging:nginx:tag"}
       TEST_IMAGE_TAG: "1" # Magic comment here
   sourceRef:
     namespace: staging

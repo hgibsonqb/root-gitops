@@ -6,7 +6,7 @@ spec:
   path: ./bundles/registry/manifests/cluster/staging
   postBuild:
     substitute:
-      REGISTRY_IMAGE_TAG: "2.8.2" # {"$imagepolicy": "staging:registry:tag"}
+      REGISTRY_IMAGE_TAG: "2.8.3" # {"$imagepolicy": "staging:registry:tag"}
   sourceRef:
     namespace: staging
   targetNamespace: staging
